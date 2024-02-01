@@ -1,0 +1,24 @@
+.wrapper {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  width: calc(var(--item-width) * var(--col-count));
+  margin: 0 auto;
+  display: grid;
+  place-content: center;
+  overflow: hidden;
+}
+
+.itemsWrapper {
+  width: calc(var(--item-width) * var(--col-count));
+  height: calc(var(--item-height) * var(--row-count));
+  
+  border: 1px solid black;
+}
+
+.itemsContainer {
+  position: relative;
+}
+

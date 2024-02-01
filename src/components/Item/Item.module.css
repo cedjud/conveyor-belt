@@ -1,0 +1,40 @@
+.wrapper {
+  position: absolute;
+  width: var(--item-width);
+  height: var(--item-height);
+  /* width: 100%;
+  height: 100%; */
+  display: grid;
+  /* place-content: center; */
+  border: 1px solid black;
+
+  border-bottom: 1px solid grey;
+  /* z-index: 1; */
+}
+
+.wrapper span {
+  position: absolute;
+  top: var(--child-top);
+  left: var(--child-left);
+  width: calc(var(--item-height) * 0.25);
+  height: calc(var(--item-height) * 0.25);
+  background-color: red;
+}
+
+.wrapper pre {
+  display: block;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color);
+  position: relative;
+  z-index: 2;
+  /* background-color: aqua; */
+}
+
+.wrapper pre.dragging {
+  /* background-color: blue; */
+  /* transform: scale(2); */
+  border: 5px solid red;
+  z-index: 10000;
+}
